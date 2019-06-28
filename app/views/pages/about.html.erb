@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html lang=en>
+<head> 
+	<meta charset=utf-8>
+	<title> Mi primer sitio web </title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+
+<body>
+	
+	<header>
+		<div>
+			<img src="imagenes/patolucas.jpg" width="100" alt="">
+		</div>
+
+		<nav>
+			<ul>
+				<li><a href="<%= root_path %>">Inicio</a></li>  
+				<li><a href="">Aplicaciones</a></li>
+				<li><a href="">Trabajos</a></li>
+				<li><a href="<%= about_path %>">Sobre nosotros</a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+	<section class="main"> 
+		<section class="articles">
+			
+			<article>
+				<h2>Bienvenidos</h2>
+				<p>Actualmente en esta sede se imparten las carreras de Ingeniería en Agronomía, Ingeniería en Computación, Administración de Empresas, Ingeniería en Producción Industrial y Gestión en Turismo Rural Sostenible. En el 2013 se da la apertura de la carrera de Ingeniería en Electrónica, la cual es importante para colaborar con el desarrollo tecnológico de la zona.</p>
+			</article>
+
+			<article>
+				<h2>Segundo articulo</h2>
+				<p>a mayor autoridad del Tecnológico es la Asamblea Institucional, que está formada por la representación de docentes, funcionarios y estudiantes, y se divide en la Asamblea Institucional Plebiscitaria y la Asamblea Representativa, y se encarga de políticas generales y ver temas como las reformas al Estatuto Orgánico. Le sigue el Consejo Institucional.</p>
+
+			</article>
+		</section>
+		<aside>
+			<h3>Informacion menos relevante</h3>
+
+			<p>Actualmente, después de ser reelecto en 2015, Calvo sigue como rector del TEC.</p>
+		</aside>
+
+		<footer>
+		<p>Instituto Tecnologico de Costa Rica - 2018</p>
+	    </footer>
+
+	</section>
+</body>
+</html>
+
