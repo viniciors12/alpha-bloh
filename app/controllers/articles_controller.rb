@@ -49,6 +49,7 @@ private
     def set_article
         @article = Article.find(params[:id])
     end
+    
     def article_params
         #shows what was passed in inputs
         params.require(:article).permit(:title, :description)
