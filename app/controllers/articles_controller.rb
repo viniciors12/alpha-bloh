@@ -2,15 +2,13 @@ class ArticlesController < ApplicationController
     #calls that method only in some other methods
     before_action :set_article, only: [:edit, :update, :show, :destroy]
 
-
-
     def new
-        @article = Article.new 
+        @article = Article.new
     end
 
     def create
         @article = Article.new(article_params)
-        @article.user = User.first
+        @article.user = User.find(7)
 
         if @article.save
             flash[:notice]="Article was successfuly created"
@@ -42,7 +40,7 @@ class ArticlesController < ApplicationController
     end
 
     def index #for listing articles
-        @articles = Article.all
+        @articles = Article.paginate(page: params[:page], per_page: 5)
     end
 
 private
